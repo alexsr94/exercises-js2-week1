@@ -41,21 +41,20 @@ function removeSkill(mentors,newSkill){
 function addStudentLikes(mentors){
   //your code here
 }
-*/ 
+*/
 
 var mentors = [
   {
     firstName: "Antonio",
     lastName: "Miranda",
-    skills: ["JS","React","Node"],
+    skills: ["JS", "React", "Node"],
     class: "Mar1",
     studentLikes: 0,
-    job:
-      {
-        company: "Google",
-        position: "Senior developer",
-        city: "Barcelona"
-      }
+    job: {
+      company: "Google",
+      position: "Senior developer",
+      city: "Barcelona",
+    },
   },
   {
     firstName: "Leo",
@@ -63,40 +62,61 @@ var mentors = [
     skills: ["Play football"],
     class: "Mar3",
     studentLikes: 0,
-    job:
-      {
-        company: "FC Barcelona",
-        position: "Player",
-        city: "Barcelona"
-      }
+    job: {
+      company: "FC Barcelona",
+      position: "Player",
+      city: "Barcelona",
+    },
   },
   {
     firstName: "John",
     lastName: "VanDamme",
-    skills: ["React","Angular","Python","Node"],
+    skills: ["React", "Angular", "Python", "Node"],
     class: "Mar4",
     studentLikes: 0,
-    job:
-      {
-        company: "Facebook",
-        position: "Software Manager",
-        city: "Chicago"
-      }
-  },  
+    job: {
+      company: "Facebook",
+      position: "Software Manager",
+      city: "Chicago",
+    },
+  },
   {
     firstName: "Giorgio",
     lastName: "Polvara",
-    skills: ["HTML","JS","React"],
+    skills: ["HTML", "JS", "React"],
     class: "Mar2",
     studentLikes: 0,
-    job:
-      {
-        company: "Amazon",
-        position: "Senior developer",
-        city: "Barcelona"
-      }
+    job: {
+      company: "Amazon",
+      position: "Senior developer",
+      city: "Barcelona",
+    },
   },
-
 ];
 
 //YOUR CODE HERE
+for (i = 0; i < mentors.length; i++) {
+  if (
+    mentors[i].job.city === "Barcelona" &&
+    mentors[i].skills.includes("React")
+  ) {
+    console.log(
+      "Hi, my name is " +
+        mentors[i].firstName +
+        " " +
+        mentors[i].lastName +
+        " .I work in Barcelona and i know React."
+    );
+  }
+  if (mentors[i].job.city === "Barcelona") {
+    mentors[i].class = "Jun1";
+    mentors[i].skills.push("SQL");
+  }
+}
+function addSkill(skill) {
+  this.skills.push(skull);
+}
+mentors.forEach(function (m) {
+  m.addSkill = addSkill;
+});
+

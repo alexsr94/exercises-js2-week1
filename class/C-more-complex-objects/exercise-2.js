@@ -30,7 +30,7 @@ var newCurrentOwner = {
 // - give the house a new property called 'isForSale' with the value 'false'
 
 
-
+house.currentOwner =newCurrentOwner;
 
 /*
   DO NOT EDIT ANYTHING BELOW THIS LINE
