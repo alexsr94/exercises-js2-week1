@@ -10,14 +10,15 @@ var mentorsAges = {
   james: 29,
   JOSH: 35,
   JAMIE: 25,
-  Mozafar: 30
+  Mozafar: 30,
 };
 
 // ONLY EDIT BELOW THIS LINE
 
-var mentorsNames = ;
+var mentorsNames = Object.keys(mentorsAges);
 
-var mentorsNamedUppercased = ;
+
+var mentorsNamedUppercased = mentorsNames.map(function (x){ return x.toUpperCase()})
 
 // ONLY EDIT ABOVE THIS LINE
 

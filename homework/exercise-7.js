@@ -71,3 +71,4 @@ for (i = 0; i < writers.length; i++) {
 /*
 If you want an extra challenge, only `console.log()` the writers that are alive.
 */
+
